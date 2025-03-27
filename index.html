@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    //Arithmetic operators
+    let a = Number(prompt('Enter a first value'));
+    let b =  Number(prompt('Enter a second value'));
+    const add= a+b;
+    const sub= a-b;
+    const div= a/b;
+    const mul= a*b;
+    const mod= a%b;
+
+    console.log(alert('addition:' + add),
+    alert('Substraction:' + sub),
+    alert('Division:' + div),
+    alert('Multiplication:' + mul),
+    alert('Modulus:' + mod));
+    
+     //Assignment operators
+    console.log("Assignment Operators")
+    console.log('addition:',a+=b);
+    console.log('subtraction:',a-=b);
+    console.log('division:',a/=b);
+    console.log('multiplication:',a*=b);
+    console.log('modulos:',a%=b);
+    
+    //Comparison operators
+    console.log("Comparison Operators")
+    console.log('',a = b);
+    console.log('',a == b);
+    console.log('',a != b);
+    console.log('',a !== b);
+    console.log('',a < b);
+
+    //Logical operators
+    var x = 'T';
+    var y = 'F';
+    console.log("Logical Operators")
+    console.log('',x && y);
+    console.log('',x || y);
+    
+    //Ternary Operator
+    var name = String(prompt('Enter your name:'))
+    let age = Number(prompt("Enter your age:"));
+    let vote = (age >= 18) ? "Yes ! you can vote 😊" : " you  cannot  vote  🤬"
+    console.log(name,vote)
+
+    // unary operator 
+     //unary opeator 
+     var p =Number(prompt("Enter p value"));
+      var q =Number(prompt("Enter q value"));
+      //post increment 
+      console.log("1st time ++",p++ + q++ ); //in that the number is not increase because we need to call 2nd time then they increase
+      console.log("2nd time ++",p + q ); //in case we call 2nd time so numer is increase by +1
+
+      console.log("1st time --",p-- + q-- );
+      console.log("1st time --",p-- + q-- );
+
+
+/// now pre increment 
+console.log("1st time called",--p + --q );
+
+
+//mixed
+console.log("mixed",p++ + --q + p-- + q--);
+
+  </script>
+</body>
+</html>
